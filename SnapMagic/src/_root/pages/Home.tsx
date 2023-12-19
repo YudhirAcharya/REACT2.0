@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function AuthLayout() {
+const Home = () => {
   return <div></div>;
-}
+};
+
+export default Home;
