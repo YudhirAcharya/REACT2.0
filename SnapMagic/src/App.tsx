@@ -17,7 +17,7 @@ const App = () => {
             element={<SigninForm />}
           ></Route>
           <Route
-            path="/sign-in"
+            path="/sign-up"
             element={<SignupForm />}
           ></Route>
         </Route>
