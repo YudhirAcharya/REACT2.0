@@ -31,7 +31,7 @@ const SignupForm = () => {
       password: "",
     },
   });
-  //2
+  //2 define submit handler
   async function onSubmit(
     values: z.infer<typeof SignupValidation>
   ) {
@@ -139,7 +139,7 @@ const SignupForm = () => {
                 className="text-primary-500"
               >
                 {" "}
-                Sign In
+                Log In
               </Link>
             </p>
           </form>
