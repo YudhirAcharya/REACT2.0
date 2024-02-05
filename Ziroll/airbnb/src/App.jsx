@@ -6,12 +6,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <div
+      style={{
+        width: "200px",
+        height: "90vh",
+        backgroundColor: "black",
+      }}
+    >
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 

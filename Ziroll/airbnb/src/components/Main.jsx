@@ -2,9 +2,17 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div>
-      <h2>I like learning React.</h2>
-      <h3>Beacause it's cool</h3>
+    <div
+      style={{
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <h2>Yudhir</h2>
+      <button>Email Me</button>
     </div>
   );
 };

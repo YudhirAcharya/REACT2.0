@@ -3,8 +3,10 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <h1>Hello!</h1>
-      <p>I am learning React</p>
+      <img
+        src=".\src\assets\pexels-emily-garland-1499327.jpg"
+        style={{ width: "200px" }}
+      />
     </div>
   );
 };
