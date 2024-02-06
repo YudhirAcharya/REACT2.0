@@ -12,7 +12,9 @@ function App() {
       <div style={{ display: "flex" }}>
         <Card />
         <Card />
+        <Card />
       </div>
+      <Footer idea="lol" />
     </div>
   );
 }
