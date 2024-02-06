@@ -1,21 +1,18 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Card from "./components/Card";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div
-      style={{
-        width: "200px",
-        height: "90vh",
-        backgroundColor: "black",
-      }}
-    >
+    <div>
+      <Navbar />
       <Header />
-      <Main />
-      <Footer />
+      <div style={{ display: "flex" }}>
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.card {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px;
+
+  border-radius: 10px;
+}
+
+img {
+  width: inherit;
+  border-radius: 10px;
+}
+
+.cardStats {
+  border: solid 1px;
+  text-align: center;
+}

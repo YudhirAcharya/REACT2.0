@@ -1,4 +1,5 @@
 import React from "react";
+import "./navbar.css";
 const navLinks = [
   { id: 1, title: "Home" },
   { id: 2, title: "About" },
@@ -8,35 +9,14 @@ const Navbar = () => {
   return (
     <nav
       style={{
-        display: "flex",
+        boxShadow: "0px, 2.9px, 7.4px, rgba(0,0,0,0.1) ",
       }}
     >
       <img
-        src="./src/assets/pngwing.com.png"
-        style={{ width: "70px", flex: "0.25" }}
-      ></img>
-      <ul
-        style={{
-          flex: "0.75",
-          listStyle: "none",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-        }}
-      >
-        {navLinks.map((item) => (
-          <li
-            key={item.id}
-            style={{
-              border: "solid 2px",
-              padding: "10px",
-              borderRadius: "10px",
-            }}
-          >
-            {item.title}
-          </li>
-        ))}
-      </ul>
+        src="./src/assets/Airbnb-logo.png"
+        alt=""
+        style={{ width: "120px", marginLeft: "30px" }}
+      />
     </nav>
   );
 };
