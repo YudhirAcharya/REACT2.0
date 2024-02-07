@@ -1,0 +1,5 @@
+.cardRender {
+  display: flex;
+
+  overflow-x: scroll;
+}

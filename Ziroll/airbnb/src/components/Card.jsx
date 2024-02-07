@@ -1,18 +1,20 @@
 import React from "react";
+import data from "../Constants.js";
 import "./card.css";
 
 const Card = (props) => {
+  console.log(data);
   return (
-    <div className="card">
-      <img src="./src/assets/katie.png" alt="" />
+    <div className="card" style={{ flexShrink: "0" }}>
+      <img src={props.src} alt="" />
       <div className="cardStats">
         <span>Stars</span>
         <span> : </span>
-        <span>5.0</span>
-        <span> USA</span>
+        <span>{props.stars}</span>
+        <span> {props.country}</span>
       </div>
-      <p>Life lessons with katie</p>
-      <p>From $100 per night.</p>
+      <p>{props.title}</p>
+      <p>{props.price}</p>
     </div>
   );
 };
