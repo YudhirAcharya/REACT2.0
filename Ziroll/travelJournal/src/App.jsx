@@ -7,9 +7,8 @@ function App() {
   return (
     <>
       <Navbar />
-
-      {data.map((data) => {
-        return <Card data={data} />;
+      {data.map((item) => {
+        return <Card item={item} />;
       })}
     </>
   );
