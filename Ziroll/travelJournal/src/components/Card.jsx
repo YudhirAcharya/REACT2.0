@@ -3,7 +3,7 @@ import "./card.css";
 
 const Card = (props) => {
   return (
-    <div className="card" style={{ width: "75%" }}>
+    <div className="card" style={{}}>
       <div className="left">
         <img
           style={{ height: "200px" }}

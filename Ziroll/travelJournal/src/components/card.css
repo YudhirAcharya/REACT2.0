@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  height: 200px;
+  overflow: hidden;
+  border: solid 1px;
+  border-radius: 10px;
 }
 .left {
   height: 200px;
