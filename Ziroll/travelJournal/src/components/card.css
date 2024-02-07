@@ -1,0 +1,26 @@
+.card {
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.left {
+  height: 200px;
+}
+.right {
+  height: 200px;
+}
+.head {
+  margin: 5px;
+}
+.head span {
+  margin: 10px;
+}
+.information {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 35px;
+}
