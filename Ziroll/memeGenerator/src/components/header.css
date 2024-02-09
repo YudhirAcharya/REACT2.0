@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: linear-gradient(to right, #6b0696, #c625ee);
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+}
