@@ -15,11 +15,26 @@ const books = [
     author: "George RR Martin",
     src: "https://m.media-amazon.com/images/I/51rDpMtBm5L.jpg",
   },
+  {
+    id: 3,
+    title: "GOT3",
+    author: "George RR Martin",
+    src: "https://m.media-amazon.com/images/I/51rDpMtBm5L.jpg",
+  },
+  {
+    id: 4,
+    title: "GOT4",
+    author: "George RR Martin",
+    src: "https://m.media-amazon.com/images/I/51rDpMtBm5L.jpg",
+  },
 ];
 
 const Book = (props) => {
   const handleBuy = () => {
     console.log("clicked");
+  };
+  const handleGetBook = () => {
+    props.getBook(props.id);
   };
   return (
     <div className=" bg-slate-500">
@@ -32,12 +47,19 @@ const Book = (props) => {
         <h1>{props.title}</h1>
         <h2>By: {props.author}</h2>
         <button onClick={handleBuy}>Buy</button>
+        <button onClick={handleGetBook}>Get Book</button>
       </div>
     </div>
   );
 };
 
 const BookList = () => {
+  const getBook = (id) => {
+    const book = books.find((item) => {
+      return item.id === id;
+    });
+    console.log(book);
+  };
   return books.map((item) => {
     return (
       <div
@@ -47,31 +69,15 @@ const BookList = () => {
           flexDirection: "column",
         }}
       >
-        <Book {...item} />
+        <Book {...item} getBook={getBook} />
       </div>
     );
   });
 };
 
-const Form = () => {
-  const handleForm = (e) => {
-    console.log(e.target.value);
-  };
-  return (
-    <form>
-      <div>
-        <input type="text" placeholder="name" />
-        <button type="submit" onClick={handleForm}>
-          Submit
-        </button>
-      </div>
-    </form>
-  );
-};
 function App() {
   return (
     <>
-      <Form />
       <BookList />
     </>
   );
