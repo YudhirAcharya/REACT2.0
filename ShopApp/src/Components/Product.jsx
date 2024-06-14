@@ -18,7 +18,10 @@ const Product = ({ product }) => {
             href="#"
             class="btn btn-primary"
             onClick={() =>
-              dispatch({ type: "Add", product: product })
+              dispatch({
+                type: "Add",
+                product: { ...product, quantity: 1 },
+              })
             }
           >
             Add to Cart
